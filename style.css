@@ -1,0 +1,638 @@
+@font-face {
+    font-family:"Gumroad";
+    src: url(./Gumroad3.woff2);
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    /* background-color: rebeccapurple; */
+}
+.header{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header h1{
+    font: 800 20vmax "Mabry Pro";
+    letter-spacing: -2px;
+  
+    width: 100%;
+    margin-top: 2vmax;
+    margin-bottom: 3vmax;
+}
+.nav{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   background-color: white;
+    border: 2px solid black;
+}
+.nav.sticky{
+    position: fixed;
+    top: 0;
+    z-index: 999;
+
+}
+
+.nav-part1{
+    display: flex;
+    gap: 50px;
+    padding-left: 5vmax;
+    font: 400 1vmax "Mabry Pro";
+}
+.nav-part2 button{
+   padding: 1.5vmax 2vmax;
+   font: 400 1.2vmax "Mabry Pro";
+   border: 2px solid black;
+   background-color: white;
+   border-left: 2px solid black;
+   border-right:none ;
+   transition: all ease 0.5s;
+   cursor: pointer;
+}
+.nav-part2 button:hover{
+    background-color: #FF90E8;
+}
+#one{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+#one:hover{
+    background-color: #FF90E8;
+    color: black;
+}
+/* =========================================== */
+
+.page1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-bottom: 2px solid black;
+}
+.p1-left{
+    width: 50%;
+    height: 100%;
+    background-color: #FF90E8;
+    padding-top: 8vmax;
+    padding-left: 5vmax;
+    border-right: 2px solid black;
+}
+.p1-left h1{
+    font: 400 8vmax "Mabry Pro";
+    line-height: 8vmax;
+}
+.p1-left h2{
+    font: 400 1.5vmax "Mabry Pro";
+    margin: 2vmax 0;
+}
+.p1-left button{
+    font: 400 1.5vmax "mabry pro";
+    padding: 1vmax 3vmax;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+.p1-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFC900;
+
+}
+
+ .img{
+    width: 80%;
+    height: 80%;
+    background-image: url(https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/61942b84ec3d406199f07d78_vegalia-p-800.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    
+ }
+ #brush{
+    position: absolute;
+    right: 5%;
+    top: -5%;
+ }
+ #G{
+    position: absolute;
+    bottom: -5%;
+    left:5%;
+ }
+ /* ================================================== */
+ .page2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 2px solid black;
+ }
+ 
+ .p2-content{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+ }
+ .p2-content{
+    font: 100 1.6vmax "Mabry pro" ;
+    text-align: center;
+ }
+ .p2-cycle{
+    width: 80%;
+    height: 45vh;
+    background-color: #FFC900;
+    border-radius: 500px;
+    margin-bottom: 10vh;
+    position: relative;
+    font:400 1vmax "Mabry Pro";
+    
+ }
+ .page2 img{
+    height:200px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: rotate 5s linear infinite;
+    
+ }
+ @keyframes rotate{
+    0%{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+ }
+ #top{
+    position: absolute;
+    top: 0;
+    left: 40%;
+ }
+
+ #right{
+    position: absolute;
+    top: 40%;
+    right: 0;
+ }
+ #bottom{
+    position: absolute;
+    bottom: 0;
+    left: 42%;
+ }
+ #left{
+    position: absolute;
+    top: 40%;
+    left: 0;
+ }
+ /* ==================================================== */
+
+ .page3{
+    width: 100%;
+    height: 120%;
+   border-bottom: 2px solid black;
+}
+.p3-top{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    font: 100 1.5vmax "Mabry Pro";
+    border-bottom: 2px solid black;
+}
+.p3t-left{
+    
+    width: 50%;
+    height: 100%;
+    background-color: #B23386;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-right: 2px solid black;
+}
+.p3t-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #FF90E8;
+}
+.p3-bottom{
+    width: 100%;
+    height: 100vh;
+    background-color: #B23386;
+    display: flex;
+}
+.p3b-left{
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   position: relative;
+   border-bottom: 3px solid black;
+
+
+}
+#img2{
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background-image: url("https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/619b0e6332c6b058a1758f9e_book.svg");
+   background-position: center;
+   background-size: cover;
+}
+.p3b-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   position: relative;
+   border-bottom: 3px solid black;
+
+    background-color:#FFC900;
+}
+#img3{
+    width: 80%;
+    height: 80%;
+   background-image: url("https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/619b0e63179ab20e6c9d3bfd_blog-post.svg");
+   background-position: center;
+   background-size: cover;
+  
+}
+.box{
+    width: 300px;
+    height: 100px;
+    border-radius: 20px;
+    border: 2px solid black;
+    background-color: white;
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 100 1.1vmax "mabry pro";
+}
+/* ================================================== */
+.page4{
+    width: 100%;
+    height: 80vh;
+    border-bottom: 2px solid black;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.page4 h1{
+    font: 400 5vmax "Mabry Pro";
+    margin-bottom: 1vmax;
+    margin-top: 6vmax;
+}
+.page4 p{
+    font:400 1.4vmax "Mabry Pro" ;
+    text-align: center;
+    margin-bottom: 2vmax;
+}
+.page4 img{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.page4 button{
+    font: 600 1.5vmax "mabry pro";
+    border: none;
+    background-color: transparent;
+}
+/* ================================================ */
+.page5{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-bottom: 2px solid black;
+}
+.p5-left{
+    width: 50%;
+    height: 100%;
+    background-color: #23A094;
+    border-right: 2px solid black;
+}
+.p5-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    padding-left: 5vmax;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+
+}
+.p5-right h1{
+    font: 400 5vmax "mabry pro";
+}
+.p5-right p{
+    font: 400 1.5vmax "mabry pro";
+}
+.p5-right ul{
+    list-style: square;
+}
+.p5-right li{
+    font:100 1.5vmax "mabry pro";
+    line-height: 2.5vmax;
+}
+/* =============================================== */
+
+.page6{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #FF90E8;
+    border-bottom: 2px solid black;
+}
+.p6-left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5vmax;
+}
+.p6-left p{
+    font: 400 2vmax "mabry pro";
+}
+.p6-right{
+    width: 50%;
+    height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.p6r-img{
+    width: 80%;
+    height: 80%;
+    background-image: url(https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/619537b960fa2619636d2959_max-ulnichey-p-800.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+#free{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+#book{
+    position: absolute;
+    bottom: 0;
+}
+/* ===================================================== */
+.page7{
+    width: 100%;
+    height: 100vh;  
+}
+.p7-top{
+    width: 100%;
+    height: 35vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.p7-top h1{
+    font: 400 3vmax "Mabry pro";
+}
+.p7-top h2{
+    font: 400 2vmax "mabry pro";
+    margin: 2vmax 0;
+}
+.p7-bottom{
+    width: 100%;
+    height: 90vh;
+    border-bottom: 2px solid black;
+    padding: 1vmax 3vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.p7b-top{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1vmax;
+}
+.container{
+    border-radius: 10px;
+    padding: 1vmax 2vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    width: 32%;
+    height: 40vh;
+    
+}
+.container img{
+    height: 80px;
+}
+.container h1{
+    font: 400 2vmax "mabry pro";
+}
+.container h3{
+    font: 400 1.3vmax "mabry pro";
+}
+.container h4{
+    font: 400 1vmax "mabry pro";
+}
+.container button{
+    padding: 0.5vmax 0.8vmax;
+    border-radius: 50px;
+    background-color: white;
+    font: 400 1vmax "mabry pro";
+    position: relative;
+    transition: all linear 0.5s;
+    border: none;
+    cursor: pointer;
+}
+.container button:hover{
+    background-color: #B23386;
+    color: white;
+}
+
+.p7b-bottom{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+}
+.cont1{
+    background-color: #23A094;
+}
+.cont2{
+    background-color: #E2442F;
+}
+.cont3{
+    background-color: #FFC900;
+}
+.cont4{
+    background-color: #F1F333;
+}
+.cont5{
+    background-color: #90a8ed;
+}
+.cont6{
+    background-color: #e2442f;
+}
+/* ================================================ */
+.page8{
+    width: 100%;
+    height: 70vh;
+    margin-top: 12vmax;
+    background-image: url(https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/619cf974793d144083f61ff2_new-sale-illustration.svg);
+    border-bottom: 2px solid black;
+}
+.page9{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF90E8;
+    border-bottom: 2px solid black;
+}
+.page9 h1{
+    font: 400 5vmax "mabry pro";
+    text-align: center;
+    line-height: 5vmax;
+    margin-bottom: 2vmax;
+}
+.page9 button{
+    padding: 1.2vmax 5vmax;
+    font: 400 1.5vmax "mabry pro";
+    border-radius: 3px;
+    border: none;
+    background-color: black;
+    color: white;
+    transition: all ease 0.5s;
+}
+.page9 button:hover{
+    background-color: #23A094;
+    color: white;
+    cursor: pointer;
+}
+.page10{
+    width: 100%;
+    height: 60vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 5vmax;
+}
+.page10-left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+
+}
+.page10-left h1{
+    font: 400 2.3vmax "mabry pro";
+}
+
+#arrow{
+    display: flex;
+  
+}
+#arrow input{
+    border-radius: 5px;
+    padding: 1vmax 15vmax 1vmax 1vmax;
+    font: 400 1.5vmax "Mabry pro";
+
+}
+#arrow button{
+    padding: 0vmax 1.8vmax;
+    background-color: #FF90E8;
+    border-radius: 5px;
+    border: px solid black;
+    margin-left: 0.5vmax;
+    cursor: pointer;
+}
+#arrow button:hover{
+    transition: all ease 0.5s;
+    background-color: #23A094;
+    color: white;
+
+}
+
+#arrow button i{
+    font-size: 2vmax;
+}
+#copy{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font: 400 1.5vmax "Mabry pro";
+}
+.page10-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    padding-left: 10vmax;
+    padding-right: 5vmax;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+}
+.page10-right ul{
+    list-style: none;
+}
+.page10-right li{
+    font: 200 1.3vmax "mabry pro";
+}
+.p10r-top{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.p10r-bottom i{
+    margin-right: 3vmax;
+    font-size: 2.5vmax;
+    gap: 20px;
+}
