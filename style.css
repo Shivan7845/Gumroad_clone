@@ -32,6 +32,9 @@ html,body{
     margin-top: 2vmax;
     margin-bottom: 3vmax;
 }
+.header i{
+    display: none;
+}
 .nav{
     width: 100%;
     height: 10vh;
@@ -45,19 +48,21 @@ html,body{
     position: fixed;
     top: 0;
     z-index: 999;
-
 }
 
 .nav-part1{
     display: flex;
-    gap: 50px;
+    width: 40%;
     padding-left: 5vmax;
     font: 400 1vmax "Mabry Pro";
+}
+.nav-part1 h4{
+   padding-right: 3vmax;
 }
 .nav-part2 button{
    padding: 1.5vmax 2vmax;
    font: 400 1.2vmax "Mabry Pro";
-   border: 2px solid black;
+   border: 0px solid black;
    background-color: white;
    border-left: 2px solid black;
    border-right:none ;
@@ -99,6 +104,7 @@ html,body{
 .p1-left h2{
     font: 400 1.5vmax "Mabry Pro";
     margin: 2vmax 0;
+    width: 70%;
 }
 .p1-left button{
     font: 400 1.5vmax "mabry pro";
@@ -160,6 +166,7 @@ html,body{
  .p2-content{
     font: 100 1.6vmax "Mabry pro" ;
     text-align: center;
+    width: 80%;
  }
  .p2-cycle{
     width: 80%;
@@ -298,6 +305,7 @@ html,body{
     position: absolute;
     top: 5%;
     left: 3%;
+    z-index: 99;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -323,6 +331,7 @@ html,body{
 .page4 p{
     font:400 1.4vmax "Mabry Pro" ;
     text-align: center;
+    width: 80%;
     margin-bottom: 2vmax;
 }
 .page4 img{
@@ -363,6 +372,7 @@ html,body{
 }
 .p5-right p{
     font: 400 1.5vmax "mabry pro";
+    width: 80%;
 }
 .p5-right ul{
     list-style: square;
@@ -523,6 +533,8 @@ html,body{
     margin-top: 12vmax;
     background-image: url(https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/619cf974793d144083f61ff2_new-sale-illustration.svg);
     border-bottom: 2px solid black;
+    background-position: center;
+    background-size: cover;
 }
 .page9{
     width: 100%;
@@ -635,4 +647,289 @@ html,body{
     margin-right: 3vmax;
     font-size: 2.5vmax;
     gap: 20px;
+}
+
+/* =======Responsive============== */
+@media(max-width:600px){
+    .header {
+        width: 100%;
+        height: 15vh;
+        padding: 0 2vmax;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .header h1{
+        font-size: 8vmax;
+        letter-spacing: 3px;
+    }
+    .header i{
+        display: initial;
+        font-size: 4vmax;
+    }
+    .nav{
+        display: none;
+    }
+    /* ======================================= */
+    .page1{
+        flex-direction: column;
+    }
+    .p1-left{
+        width: 100%;
+        /* height: 50vh; */
+        padding-top: 2vmax;
+        padding-left:3vmax
+    }
+    .p1-left h1{
+        line-height: 9vmax;
+        font-size: 10vmax;
+    }
+    .p1-left h2{
+        font-size: 2.5vmax;
+        width: 85%;
+    }
+    .p1-left button{
+        font-size: 2vmax;
+    }
+    .p1-right{
+        width: 100%;
+    }
+    #brush{
+        height: 10vmax;
+    }
+    #G{
+        height: 10vmax;
+    }
+    /* ==========page2================ */
+
+    .page2{
+        height: 60vh;
+    }
+    .p2-content{
+        width: 80%;
+        height: 20vh;
+        margin-top: 2vmax;
+    }
+    .p2-cycle{
+        width: 70%;
+        margin-top: 2vmax;
+        height: 60vh;
+    }
+    .page2 img{
+        height: 100px;
+    }
+    #top{
+        top: 10%;
+        left: 27%;
+    }
+    #bottom{
+        left: 35%;
+        bottom: 10%;
+    }
+    #left{
+        top: 44%;
+        width: 80%;
+    }
+    
+    #right{
+        top: 44%;
+        right: 2%;
+    }
+    /* ============================================= */
+
+  
+    .p3-top{
+        flex-direction: column;
+
+    }
+    .p3t-left{
+        width: 100%;
+    }
+    .p3t-right{
+        width: 100%;
+    }
+    .p3-bottom{
+        flex-direction: column;
+    }
+    .p3b-left{
+        width: 100%;
+    }
+    .p3b-right{
+        width: 100%;
+    }
+    .box{
+        height: 7vmax;
+        width: 300px;
+        font-size: 2vmax;
+    }
+    /* ======================================== */
+    .page4 img{
+        height: 13vh;
+        transform: translateY(15vmax);
+        transform: translateX(-5vmax);
+    }
+    .page4{
+        height: 45vh;
+        margin-top: 15vmax;
+       
+    }
+    .page4 p{
+        font-size: 2.1vmax;
+        width: 90%;
+    }
+    .page4 button{
+        font-size: 2.5vmax;
+    }
+    /* =============================================== */
+    .page5{
+        flex-direction: column;
+    }
+    .p5-left{
+        width: 100%;
+        height: 50vh;
+    }
+    .p5-left img{
+        width: 100%;
+        height: 100%;
+    }
+    .p5-right{
+        width: 100%;
+        height: 50vh;
+
+    }
+    .p5-right p{
+        font-size: 2.2vmax;
+        width: 90%;
+    }
+    .p5-right li{
+        font-size: 2vmax;
+        font-weight: 400;
+        line-height: 3vmax;
+    }
+    /* ====================================== */
+    .page6{
+        height: 70vh;
+       flex-direction: column;
+    }
+    .p6-left{
+        width: 100%;
+        height: 40vh;
+    }
+    .p6-right{
+        width: 100%;
+        height: 50vh;
+    }
+    #free{
+        height: 15vmax;
+    }
+    #book{
+        height: 12vmax;
+    }
+    .p6r-img{
+        height: 90%;
+    }
+    /* ==================================== */
+
+    .page7{
+        height: 210vh;
+    }
+    .p7-top {
+      
+        height: 25vh;
+        padding: 0 2vmax;
+        margin-bottom: 0;
+    }
+    .p7-top h1{
+        font-size: 4vmax;
+        line-height: 4.5vmax;
+    }
+    .p7-top h2{
+        font-size: 2.5vmax;
+        line-height: 2.8vmax;
+        margin: 0;
+    }
+    .p7-bottom{
+        height: 150vh;
+        border-bottom: none;
+        
+    }
+    .p7b-top{
+        height: 100vh;
+        flex-direction: column;
+    }
+    .container{
+        width: 100%;
+        margin: 1vmax;
+
+    }
+    .container img{
+        height: 80px;
+    }
+    .container h1{
+        font-size: 2.8vmax;
+    }
+    .container h3{
+        font-size: 2vmax;
+        line-height: 2.5vmax;
+    }
+    .container h4{
+        font-size: 1.7vmax;
+    }
+    .container button{
+        font-size: 2vmax;
+    }
+    .p7b-bottom{
+        flex-direction: column;
+    }
+    /* ============================================== */
+
+    .page8{
+        height: 50vh;
+    }
+    /* ============================================= */
+    .page9{
+        height: 35vh;
+        padding: 0 1vmax;
+    }
+    .page9 button{
+        font-size: 2vmax;
+    }
+    /* =========================================== */
+    .page10{
+        flex-direction: column;
+        height: 60vh;
+        padding: 2vmax;
+    }
+
+    .page10-left{
+       height: 30vh;
+       width: 100%;
+    }
+    .page10-left h1{
+        font-size: 3vmax;
+        line-height: 3vmax;
+    }
+    #arrow input{
+        font-size: 2vmax;
+        padding: 1vmax 8vmax 1vmax 1vmax;
+    }
+    #arrow button i{
+        font-size: 3vmax;
+    }
+    .page10-right{
+        width: 100%;
+        height: 25vh;
+        margin-top: 2vmax;
+       /* background-color: red; */
+       padding-left: 2vmax;
+       padding-right: 2vmax;
+
+    }
+    .page10-right li{
+        font-size: 2.2vmax;
+    }
+    .p10r-bottom i{
+        font-size: 4vmax;
+        
+    }
 }
